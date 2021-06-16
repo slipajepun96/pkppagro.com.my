@@ -189,11 +189,9 @@ include('includes/config.php');
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner">
-      <div class="carousel-item  active">
-      <img class="d-block w-100 item" src="/image/poster raya - web.jpg" width="100%">
-    </div>
+    
       
-    <div class="carousel-item">
+    <div class="carousel-item active">
       <img class="d-block w-100 item" src="/image/main1.jpg" height="100%">
     </div>
     <div class="carousel-item">
