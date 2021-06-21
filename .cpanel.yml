@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pkppagro/public_html/github_try
+    - export DEPLOYPATH=/home/pkppagro/public_html
     - /bin/cp -R * $DEPLOYPATH
