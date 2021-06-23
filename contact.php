@@ -85,42 +85,49 @@ foreach($results as $result)
 {				?>	
 
 
-<div class="row row-30">
-		  
-		 
-		  
-		  <div class="col-md-6">
-				<h4><br><a href="tel:+601126637117"><img src="/image/call-inverse.png" width=100><br><?php echo htmlentities($result->phone_num);?></a></h4><br>Isnin - Jumaat, 8.00 pagi - 5.00 petang
-          </div>
-		  <div class="col-md-6">
-				<h4><br><a href="mailto:pkppagro@gmail.com"><img src="/image/mail-inverse.png" width=100><br><?php echo htmlentities($result->email);?></a></h4><br>
-          </div>
-		  </div>
-
-											
-
+<!-- <div class="row row-30">
+	<div class="col-md-6">
+		<h4><br><a href="tel:+601126637117"><img src="/image/call-inverse.png" width=100><br><?php echo htmlentities($result->phone_num);?></a></h4><br>Isnin - Jumaat, 8.00 pagi - 5.00 petang
+    </div>
+	<div class="col-md-6">
+		<h4><br><a href="mailto:pkppagro@gmail.com"><img src="/image/mail-inverse.png" width=100><br><?php echo htmlentities($result->email);?></a></h4><br>
+    </div>
+</div> -->
 
 	   <div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h4><br><b>Ibu Pejabat</b></h4>
-       			<address> <h6>PKPP Agro Sdn. Bhd.<br>KM 4, Jalan Selendang,<br>26800 Kuala Rompin,<br>Pahang Darul Makmur<br><br><br>	</h6>	</address><br><br>
+       			<address> <h6>PKPP Agro Sdn. Bhd.<br>KM 4, Jalan Selendang,<br>26800 Kuala Rompin,<br>Pahang Darul Makmur<br></h6></address>
 			</div>
 		</div>
-	   <div class="row row-30">
+		<div class="row">
+			<div class="col-md-6">
+				<h4><br><a href="tel:+601126637117"><img src="/image/call-inverse.png" width=100><br> 011-2663 7117</a></h4><br>Isnin - Jumaat, 8.00 pagi - 5.00 petang
+			</div>
+			<div class="col-md-6">
+				<h4><br><a href="mailto:pkppagro@gmail.com"><img src="/image/mail-inverse.png" width=100><br><?php echo htmlentities($result->email);?></a></h4><br>
+			</div>
+		</div>
+		<hr style=" height: 2px; background: #f0f0f0;">
+		<div class="row row-30">
 			<div class="col-md-4">
 				<h4><br><b>Ladang Sungai Kerpai</b></h4>
-       			<address> <h6>Ladang Sungai Kerpai <br>D/A. PKPP Agro Sdn. Bhd.<br>KM 4, Jalan Selendang,<br>26800 Kuala Rompin,<br>Pahang Darul Makmur<br> Telefon : <a href="tel:+601126637117">011-2663 7117</a><br>Emel : <a href="mainto:sg.kerpai@pkppagro.com.my">sg.kerpai@pkppagro.com.my</a>	</h6>	</address><br><br>
-	   		</div>
+       			<address> <h6>Ladang Sungai Kerpai <br>D/A. PKPP Agro Sdn. Bhd.<br>KM 4, Jalan Selendang,<br>26800 Kuala Rompin,<br>Pahang Darul Makmur<br><br> Telefon : <a href="tel:+601126637117">011-2663 7117</a><br>Emel : <a href="mainto:sg.kerpai@pkppagro.com.my">sg.kerpai@pkppagro.com.my</a>	</h6>	</address>
+	   			<br><a href="https://goo.gl/maps/VUwvvyK5sebm1n4h7">Lokasi di Google Maps &rarr;</a>
+			   </div>
 			<div class="col-md-4">
 				<h4><br><b>Ladang PKPP Paloh Hinai</b></h4>
-				<address> <h6>Ladang PKPP Paloh Hinai <br>26650 Pekan,<br>Pahang Darul Makmur<br> Telefon : <a href="tel:+60146105117">014-610 5117</a><br> Emel : <a href="mainto:paloh.hinai@pkppagro.com.my">paloh.hinai@pkppagro.com.my</a><br><br>	</h6>	</address><br><br>
+				<address> <h6>Ladang PKPP Paloh Hinai <br>26650 Pekan,<br>Pahang Darul Makmur<br><br> Telefon : <a href="tel:+60146105117">014-610 5117</a><br> Emel : <a href="mainto:paloh.hinai@pkppagro.com.my">paloh.hinai@pkppagro.com.my</a> 	</h6>	</address>
+				<br><a href="https://goo.gl/maps/E2UvpDaeoYqDsJRf6">Lokasi di Google Maps &rarr;</a>
+				
 	   		</div>
 			<div class="col-md-4">
 				<h4><br><b>Ladang PKPP Sri Jelutong</b></h4>
-				<address> <h6>Ladang PKPP Sri Jelutong,<br>D/A. Ladang PKPP Paloh Hinai <br>26650 Pekan,<br>Pahang Darul Makmur<br> Telefon : <a href="tel:+60199180218">019-918 0218</a><br> Emel : <a href="mainto:sri.jelutong@pkppagro.com.my">sri.jelutong@pkppagro.com.my</a><br>	</h6>	</address><br><br>
-	   		</div>
-		</div>
+				<address> <h6>Ladang PKPP Sri Jelutong,<br>D/A. Ladang PKPP Paloh Hinai <br>26650 Pekan,<br>Pahang Darul Makmur<br><br> Telefon : <a href="tel:+60199180218">019-918 0218</a><br> Emel : <a href="mainto:sri.jelutong@pkppagro.com.my">sri.jelutong@pkppagro.com.my</a><br>	</h6>	</address>
+				<br><a href="https://goo.gl/maps/YfZPn53yQNiYzgQAA">Lokasi di Google Maps &rarr;</a>
+			   </div>
+		</div><br>
           <div class="row row-30">
 		  
 		 

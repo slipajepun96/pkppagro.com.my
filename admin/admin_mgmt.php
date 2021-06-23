@@ -58,23 +58,7 @@ $msg="Board of Director  deleted successfully";
   <script src="js/jquery-3.2.1.slim.min.js" ></script>
   <script src="js/popper.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
-  <?php
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
-}
-?>
+
 <?php 
 SESSION_START();
 
@@ -108,7 +92,7 @@ SESSION_START();
 		&nbsp;&nbsp;&nbsp;<a href="admin_mgmt_add.php"><button type=button class="btn btn-primary col-1.5" > + Add New</button></a><br><br>
 		<div class="col-sm-12">
 		<table border=1 align=center class=table >
-		<thead class=thead-dark><tr><th>ID</th><th>Name</th><th>Image</th><th>Years of Service</th><th>Position</th><th>Action</th></tr><thead>
+		<thead class=thead-dark><tr><th>ID</th><th>Name</th><th>Image</th><th>Position</th><th>Area Of Service</th><th>Level Of Management</th><th>Action</th></tr><thead>
 		<tbody>
 
 <?php $sql = "SELECT * from management ";
@@ -124,8 +108,9 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->m_id);?></td>
 											<td><?php echo htmlentities($result->m_name);?></td>
 											<td><img src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height=70></td>
-											<td><?php echo htmlentities($result->m_years_of_service);?></td>
 											<td><?php echo htmlentities($result->m_position);?></td>
+											<td><?php echo htmlentities($result->m_area_of_service);?></td>
+											<td><?php echo htmlentities($result->m_level);?></td>
 											<td><a href="admin_mgmt_edit.php?m_id=<?php echo $result->m_id;?>">Edit</i></a>&nbsp;&nbsp;
 <a href="admin_mgmt.php?del=<?php echo $result->m_id;?>" onclick="return confirm('Do you want to delete');">Delete<i class="fa fa-close"></i></a></td>
 										</tr>

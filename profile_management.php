@@ -33,35 +33,31 @@ include('includes/config.php');
 
 
 </head>
+<body link=ffffff alink=ffffff vlink=ffffff>
 <div id="container">
    <div id="header">
-   
-
-<body link=ffffff alink=ffffff vlink=ffffff>
- <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS 
-    <script src="js/jquery-3.2.1.slim.min.js" ></script>
-  <script src="js/popper.min.js" ></script>
-  <script src="js/bootstrap.min.js" ></script>-->
-  <div class="header">
-
-
-		 
-            <!-- /.navbar-collapse -->
-			<?php include('includes/lowheader.php');?>
-        </div>
-        <!-- /.container-fluid -->
-    </nav></div>
-	<center>
-<div id="carouselExampleControls" class="carousel" data-ride="carousel">
-  <div class="carousel-inner" role="listbox" >
-    <div class="carousel-item active">
-      <img src="/image/carousel/meeting_room.jpg" class="d-block w-100 item" alt="Padi">
-	  <div class="carousel-caption ">
-	  
-          <h1>Pengurusan</h1>
-        </div>
-    </div></div></div>
+   		
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS 
+				<script src="js/jquery-3.2.1.slim.min.js" ></script>
+			<script src="js/popper.min.js" ></script>
+			<script src="js/bootstrap.min.js" ></script>-->
+			<div class="header">
+				<!-- /.navbar-collapse -->
+				<?php include('includes/lowheader.php');?>
+			</div>
+				<!-- /.container-fluid -->
+	</div>
+		<center>
+		<div id="carouselExampleControls" class="carousel" data-ride="carousel">
+		<div class="carousel-inner" role="listbox" >
+			<div class="carousel-item active">
+				<img src="/image/carousel/meeting_room.jpg" class="d-block w-100 item" alt="Padi">
+				<div class="carousel-caption ">
+					<h1>Pengurusan</h1>
+				</div>
+			</div>
+		</div></div>
 	
 	<div class="col-sm-12"><br>
 		<!--table for management -->
@@ -149,152 +145,194 @@ include('includes/config.php');
           </div>
 		   </div>
 
-		   <!--ladang-->
-		   <div class="container">
-		   <br>
-		   <hr><br>
-		   <h5><b>Ladang Sungai Kerpai</b></h5><br>
-				<?php $sql = "SELECT * from management where m_level=3 && m_area_of_service='Ladang Sungai Kerpai'";
-																$query = $dbh -> prepare($sql);
-																$query->execute();
-																$results=$query->fetchAll(PDO::FETCH_OBJ);
-																$cnt=1;
-			?>
-		
-			<div class="row row-30"><?php
-																if($query->rowCount() > 0)
-																{
-																	foreach($results as $result)
-																	{				?>
-				
-		 		<div class="col-md-12">
-				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
-				<h6><?php echo htmlentities($result->m_name);?></h6>
-				<?php echo htmlentities($result->m_position);?>
-				</div>
-				<?php $cnt=$cnt+1; }} ?>						
-          </div>
-		<br>
-		  <?php $sql = "SELECT * from management where m_level=4 && m_area_of_service='Ladang Sungai Kerpai'";
-																$query = $dbh -> prepare($sql);
-																$query->execute();
-																$results=$query->fetchAll(PDO::FETCH_OBJ);
-																$cnt=1;
-			?>
-		
-			<div class="row row-30"><?php
-																if($query->rowCount() > 0)
-																{
-																	foreach($results as $result)
-																	{				?>
-				
-		 		<div class="col-md-12">
-				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
-				<h6><?php echo htmlentities($result->m_name);?></h6>
-				<?php echo htmlentities($result->m_position);?>
-				</div>
-				<?php $cnt=$cnt+1; }} ?>						
-          </div>
-		   </div>
-		   <!-- end of ladang-->
+<!-- Accodion Chart Organisation-->
+<br>
 
-		   <!--ladang-->
-		   <div class="container"><br>
-		   <hr><br>
-		   <h5><b>Ladang PKPP Paloh Hinai</b></h5><br>
-				<?php $sql = "SELECT * from management where m_level=3 && m_area_of_service='Ladang PKPP Paloh Hinai'";
-																$query = $dbh -> prepare($sql);
-																$query->execute();
-																$results=$query->fetchAll(PDO::FETCH_OBJ);
-																$cnt=1;
-			?>
-		
-			<div class="row row-30"><?php
-																if($query->rowCount() > 0)
-																{
-																	foreach($results as $result)
-																	{				?>
-				
-		 		<div class="col-md-12">
-				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
-				<h6><?php echo htmlentities($result->m_name);?></h6>
-				<?php echo htmlentities($result->m_position);?>
-				</div>
-				<?php $cnt=$cnt+1; }} ?>						
-          </div>
-		<br>
-		  <?php $sql = "SELECT * from management where m_level=4 && m_area_of_service='Ladang PKPP Paloh Hinai'";
-																$query = $dbh -> prepare($sql);
-																$query->execute();
-																$results=$query->fetchAll(PDO::FETCH_OBJ);
-																$cnt=1;
-			?>
-		
-			<div class="row row-30"><?php
-																if($query->rowCount() > 0)
-																{
-																	foreach($results as $result)
-																	{				?>
-				
-		 		<div class="col-md">
-				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
-				<h6><?php echo htmlentities($result->m_name);?></h6>
-				<?php echo htmlentities($result->m_position);?>
-				</div>
-				<?php $cnt=$cnt+1; }} ?>						
-          </div>
-		   </div>
-		   <!-- end of ladang-->
+<div class="container">
+	<h1>Pengurusan Ladang</h1>
+	<div class="accordion" id="accordionExample">
+	<div class="card">
+		<div class="card-header bg-success" id="headingOne">
+		<h5 class="mb-0">
+			<button class="btn  collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			Ladang Sungai Kerpai
+			</button>
+		</h5>
+		</div>
 
-		   <!--ladang-->
-		   <div class="container"><br>
-		   <hr><br>
-		   <h5><b>Ladang PKPP Sri Jelutong</b></h5><br>
-				<?php $sql = "SELECT * from management where m_level=3 && m_area_of_service='Ladang PKPP Sri Jelutong'";
-																$query = $dbh -> prepare($sql);
-																$query->execute();
-																$results=$query->fetchAll(PDO::FETCH_OBJ);
-																$cnt=1;
-			?>
-		
-			<div class="row row-30"><?php
-																if($query->rowCount() > 0)
-																{
-																	foreach($results as $result)
-																	{				?>
-				
-		 		<div class="col-md-12">
-				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
-				<h6><?php echo htmlentities($result->m_name);?></h6>
-				<?php echo htmlentities($result->m_position);?>
-				</div>
-				<?php $cnt=$cnt+1; }} ?>						
-          </div>
+		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+		<div class="card-body">
+			<!-- Ladang Sungai Kerpai -->
+			<!--ladang-->
+			<div class="container">
+					<?php $sql = "SELECT * from management where m_level=3 && m_area_of_service='Ladang Sungai Kerpai'";
+																	$query = $dbh -> prepare($sql);
+																	$query->execute();
+																	$results=$query->fetchAll(PDO::FETCH_OBJ);
+																	$cnt=1;
+				?>
+			
+				<div class="row row-30"><?php
+																	if($query->rowCount() > 0)
+																	{
+																		foreach($results as $result)
+																		{				?>
+					
+					<div class="col-md-12">
+					<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
+					<h6><?php echo htmlentities($result->m_name);?></h6>
+					<?php echo htmlentities($result->m_position);?>
+					</div>
+					<?php $cnt=$cnt+1; }} ?>						
+			</div>
 			<br>
-		  <?php $sql = "SELECT * from management where m_level=4 && m_area_of_service='Ladang PKPP Sri Jelutong'";
-																$query = $dbh -> prepare($sql);
-																$query->execute();
-																$results=$query->fetchAll(PDO::FETCH_OBJ);
-																$cnt=1;
-			?>
-		
-			<div class="row row-30"><?php
-																if($query->rowCount() > 0)
-																{
-																	foreach($results as $result)
-																	{				?>
-				
-		 		<div class="col-md-12">
-				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
-				<h6><?php echo htmlentities($result->m_name);?></h6>
-				<?php echo htmlentities($result->m_position);?>
-				</div>
-				<?php $cnt=$cnt+1; }} ?>						
-          </div>
-		   </div>
-		   <!-- end of ladang-->
-		  <br><br>
-            </div>
+			<?php $sql = "SELECT * from management where m_level=4 && m_area_of_service='Ladang Sungai Kerpai'";
+																	$query = $dbh -> prepare($sql);
+																	$query->execute();
+																	$results=$query->fetchAll(PDO::FETCH_OBJ);
+																	$cnt=1;
+				?>
+			
+				<div class="row row-30"><?php
+																	if($query->rowCount() > 0)
+																	{
+																		foreach($results as $result)
+																		{				?>
+					
+					<div class="col-md-12">
+					<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
+					<h6><?php echo htmlentities($result->m_name);?></h6>
+					<?php echo htmlentities($result->m_position);?>
+					</div>
+					<?php $cnt=$cnt+1; }} ?>						
+			</div>
+			</div>
+			<!-- end of ladang-->
+
+
+		</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header bg-success" id="headingTwo">
+		<h5 class="mb-0">
+			<button class="btn collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			Ladang PKPP Paloh Hinai
+			</button>
+		</h5>
+		</div>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		<div class="card-body">
+			<!--ladang-->
+			<div class="container"><br>
+					<?php $sql = "SELECT * from management where m_level=3 && m_area_of_service='Ladang PKPP Paloh Hinai'";
+																	$query = $dbh -> prepare($sql);
+																	$query->execute();
+																	$results=$query->fetchAll(PDO::FETCH_OBJ);
+																	$cnt=1;
+				?>
+			
+				<div class="row row-30"><?php
+																	if($query->rowCount() > 0)
+																	{
+																		foreach($results as $result)
+																		{				?>
+					
+					<div class="col-md-12">
+					<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
+					<h6><?php echo htmlentities($result->m_name);?></h6>
+					<?php echo htmlentities($result->m_position);?>
+					</div>
+					<?php $cnt=$cnt+1; }} ?>						
+			</div>
+			<br>
+			<?php $sql = "SELECT * from management where m_level=4 && m_area_of_service='Ladang PKPP Paloh Hinai'";
+																	$query = $dbh -> prepare($sql);
+																	$query->execute();
+																	$results=$query->fetchAll(PDO::FETCH_OBJ);
+																	$cnt=1;
+				?>
+			
+				<div class="row row-30"><?php
+																	if($query->rowCount() > 0)
+																	{
+																		foreach($results as $result)
+																		{				?>
+					
+					<div class="col-md">
+					<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
+					<h6><?php echo htmlentities($result->m_name);?></h6>
+					<?php echo htmlentities($result->m_position);?>
+					</div>
+					<?php $cnt=$cnt+1; }} ?>						
+			</div>
+			</div>
+			<!-- end of ladang-->
+
+
+		</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header bg-success" id="headingThree">
+		<h5 class="mb-0">
+			<button class="btn text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			Ladang PKPP Sri Jelutong
+			</button>
+		</h5>
+		</div>
+		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		<div class="card-body">
+			<!--ladang-->
+			<div class="container"><br>
+					<?php $sql = "SELECT * from management where m_level=3 && m_area_of_service='Ladang PKPP Sri Jelutong'";
+																	$query = $dbh -> prepare($sql);
+																	$query->execute();
+																	$results=$query->fetchAll(PDO::FETCH_OBJ);
+																	$cnt=1;
+				?>
+			
+				<div class="row row-30"><?php
+																	if($query->rowCount() > 0)
+																	{
+																		foreach($results as $result)
+																		{				?>
+					
+					<div class="col-md-12">
+					<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
+					<h6><?php echo htmlentities($result->m_name);?></h6>
+					<?php echo htmlentities($result->m_position);?>
+					</div>
+					<?php $cnt=$cnt+1; }} ?>						
+			</div>
+				<br>
+			<?php $sql = "SELECT * from management where m_level=4 && m_area_of_service='Ladang PKPP Sri Jelutong'";
+																	$query = $dbh -> prepare($sql);
+																	$query->execute();
+																	$results=$query->fetchAll(PDO::FETCH_OBJ);
+																	$cnt=1;
+				?>
+			
+				<div class="row row-30"><?php
+																	if($query->rowCount() > 0)
+																	{
+																		foreach($results as $result)
+																		{				?>
+					
+					<div class="col-md-12">
+					<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/management_image/<?php echo htmlentities($result->m_img);?>" height="200px"></div><br>
+					<h6><?php echo htmlentities($result->m_name);?></h6>
+					<?php echo htmlentities($result->m_position);?>
+					</div>
+					<?php $cnt=$cnt+1; }} ?>						
+			</div>
+			</div>
+			<!-- end of ladang-->
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
             
 
 		<!-- end of working area-->

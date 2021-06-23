@@ -91,13 +91,18 @@ SESSION_START();
 										<tr>
 											<div class="col-sm-12">
 		<div class="justify-content-center">
-		<form class="form-horizontal col-sm-10 " action="admin_mgmt_add_process.php" method="post"><div class="form-group" >
+		<form class="form-horizontal col-sm-10 " action="admin_mgmt_add_process.php" method="post" enctype="multipart/form-data"><div class="form-group" >
 		<div class=row>
-		<div class=col-3>ID: <input type="text" id="m_id" name="m_id" class="form-control " placeholder="ID"></div>
-		<div class=col-9>Name : <input type="text" id="m_name" name="m_name" class="form-control" placeholder="Name" ></div></div>
-		Image Address : <input type="text" class="form-control col-12" name="m_img" placeholder="Image Address (example : image.jpg)" >
-		Years of Service(not compulsary) : <input type="text" class="form-control col-12" name="m_years_of_service" placeholder=" if any" >
-		Position : <input type="text" class="form-control col-12" name="m_position" placeholder="Position" ><br>
+			<div class=col-3>ID: <input type="text" id="m_id" name="m_id" class="form-control " placeholder="ID"></div>
+			<div class=col-9>Name : <input type="text" id="m_name" name="m_name" class="form-control" placeholder="Name" ></div>
+		</div><br>
+		<!-- Image Address : <input type="text" class="form-control col-12" name="m_img" placeholder="Image Address (example : image.jpg)" > -->
+		<div class="form-group">
+			<label for="exampleFormControlFile1">Example file input</label>
+
+		<input type="file" class="" name="m_img" id="m_img">
+		</div>
+		<br>Position : <input type="text" class="form-control col-12" name="m_position" placeholder="Position" ><br>
 		<button type=submit class="btn btn-primary my-2 my-sm-0">Save</button>
 		</div>
 		</div></div></div></form>
