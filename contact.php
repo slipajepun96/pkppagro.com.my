@@ -114,18 +114,18 @@ foreach($results as $result)
 			<div class="col-md-4">
 				<h4><br><b>Ladang Sungai Kerpai</b></h4>
        			<address> <h6>Ladang Sungai Kerpai <br>D/A. PKPP Agro Sdn. Bhd.<br>KM 4, Jalan Selendang,<br>26800 Kuala Rompin,<br>Pahang Darul Makmur<br><br> Telefon : <a href="tel:+601126637117">011-2663 7117</a><br>Emel : <a href="mainto:sg.kerpai@pkppagro.com.my">sg.kerpai@pkppagro.com.my</a>	</h6>	</address>
-	   			<br><a href="https://goo.gl/maps/VUwvvyK5sebm1n4h7">Lokasi di Google Maps &rarr;</a>
+	   			<br><a href="https://goo.gl/maps/VUwvvyK5sebm1n4h7" target="_blank">Lokasi di Google Maps &rarr;</a>
 			   </div>
 			<div class="col-md-4">
 				<h4><br><b>Ladang PKPP Paloh Hinai</b></h4>
 				<address> <h6>Ladang PKPP Paloh Hinai <br>26650 Pekan,<br>Pahang Darul Makmur<br><br> Telefon : <a href="tel:+60146105117">014-610 5117</a><br> Emel : <a href="mainto:paloh.hinai@pkppagro.com.my">paloh.hinai@pkppagro.com.my</a> 	</h6>	</address>
-				<br><a href="https://goo.gl/maps/E2UvpDaeoYqDsJRf6">Lokasi di Google Maps &rarr;</a>
+				<br><a href="https://goo.gl/maps/E2UvpDaeoYqDsJRf6" target="_blank">Lokasi di Google Maps &rarr;</a>
 				
 	   		</div>
 			<div class="col-md-4">
 				<h4><br><b>Ladang PKPP Sri Jelutong</b></h4>
 				<address> <h6>Ladang PKPP Sri Jelutong,<br>D/A. Ladang PKPP Paloh Hinai <br>26650 Pekan,<br>Pahang Darul Makmur<br><br> Telefon : <a href="tel:+60199180218">019-918 0218</a><br> Emel : <a href="mainto:sri.jelutong@pkppagro.com.my">sri.jelutong@pkppagro.com.my</a><br>	</h6>	</address>
-				<br><a href="https://goo.gl/maps/YfZPn53yQNiYzgQAA">Lokasi di Google Maps &rarr;</a>
+				<br><a href="https://goo.gl/maps/YfZPn53yQNiYzgQAA" target="_blank">Lokasi di Google Maps &rarr;</a>
 			   </div>
 		</div><br>
           <div class="row row-30">
