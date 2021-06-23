@@ -106,7 +106,7 @@ foreach($results as $result)
 				<h4><br><a href="tel:+601126637117"><img src="/image/call-inverse.png" width=100><br> 011-2663 7117</a></h4><br>Isnin - Jumaat, 8.00 pagi - 5.00 petang
 			</div>
 			<div class="col-md-6">
-				<h4><br><a href="mailto:pkppagro@gmail.com"><img src="/image/mail-inverse.png" width=100><br><?php echo htmlentities($result->email);?></a></h4><br>
+				<h4><br><a href="mailto:pkppagro@gmail.com"><img src="/image/mail-inverse.png" width=100><br><?php echo htmlentities($result->email);?></a></h4>
 			</div>
 		</div>
 		<hr style=" height: 2px; background: #f0f0f0;">
