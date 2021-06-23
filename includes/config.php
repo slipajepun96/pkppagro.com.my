@@ -3,7 +3,7 @@
 define('DB_HOST','rocky.sfdns.net');
 define('DB_USER','pkppagro_master');
 define('DB_PASS','root');
-define('DB_NAME','');
+define('DB_NAME','pkppagro_web');
 
 // DB credentials
 // define('DB_HOST','127.0.0.1');
