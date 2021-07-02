@@ -62,7 +62,7 @@ include('includes/config.php');
           <h1>Ahli Lembaga Pengarah</h1>
         </div>
     </div></div></div>
-	
+
 	<div class="col-sm-12"><br>
 		<!--table for bod chairman--> 
 		<table align=center class="table table-borderless" >
