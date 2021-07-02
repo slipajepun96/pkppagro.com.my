@@ -101,7 +101,7 @@ include('includes/config.php');
 		
 		  
 		 
-		  <div class="col-md-4">
+		  <div class="col-md-3">
 				<div class="potrait"><img style="max-width:100%;max-height:100%;" src="/image/bod_image/<?php echo htmlentities($result->bod_img);?>" width="150"></div><br>
 				<h6><?php echo htmlentities($result->name);?></h6>
 				<?php echo htmlentities($result->oth2);?>
