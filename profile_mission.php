@@ -65,24 +65,23 @@ include('includes/config.php');
 <div class="container col-sm-8">
 		  
 		<div class="special"><h4>Visi</h4></div>
-		  <p>Menjadi peneraju kepada agensi induk iaitu Perbadanan Kemajuan Pertanian Negeri Pahang (PKPP) 
-			dalam sektor pengeluaran makanan dan bidang-bidang lain bagi memenuhi keperluan makanan negara</p>
+		  <p>Menyumbang kepada Perbadanan Kemajuan Pertanian Negeri Pahang (PKPP) dalam memajukan industri pertanian di Negeri Pahang</p>
 			
 		<br>
 			<div class="special"><h4>Misi</h4></div>
-			<p>Menggunapakai teknologi terkini, moden, cekap, mampan dan berdaya maju dalam merealisasikan aspirasi 
-						syarikat untuk menerajui sektor pengeluaran makanan.</p>
+			<ul class="list-group " >
+				<li class="list-group-item border-success mb-3">Menjadi peneraju dalam sektor tanaman makanan</li>
+				<li class="list-group-item border-success mb-3">Melahirkan tenaga pakar sebagai penggerak ekonomi syarikat dan masyarakat</li>
+			</ul>
 			<br>			
-			<div class="special"><h4>Objektif Korporat</h4></div><p>Memajukan pembangunan tanaman makanan terutamanya padi dan kelapa, dengan segala usaha sama ada 
-								secara lansung atau tidak lansung serta menjalankan aktiviti-aktiviti lain yang difikirkan sesuai bagi 
-								membantu syarikat melaksanakan tugasnya.</p>
+			<div class="special"><h4>Objektif Korporat</h4></div><p>Menjadi antara anak syarikat Perbadanan Kemajuan Pertanian Negeri Pahang (PKPP) yang terpenting, memberi impak positif dan sebagai sumber rujukan utama</p>
 			<br>					
 			<div class="special"><h4>Strategi Korporat</h4></div>
 			<ul class="list-group " >
-				<li class="list-group-item border-success mb-3">Membangun sektor pengeluaran makanan yang moden, cekap, mapan dan berdaya maju</li>
+				<li class="list-group-item border-success mb-3">Mengutamakan amalan pertanian baik dan pengurusan yang cekap</li>
+				<li class="list-group-item border-success mb-3">Menggunapakai teknologi terkini di samping pengurusan sumber manusia yang bertanggungjawab</li>
+				<li class="list-group-item border-success mb-3">Memaksimakan perolehan daripada sumber yang ada bagi menyokong kelangsungan operasi syarikat</li>
 				<li class="list-group-item border-success mb-3">Mewujudkan program yang seimbang untuk perkembangan perniagaan dan pembangunan sosial</li>
-				<li class="list-group-item border-success mb-3">Memaksimumkan penggunaan sumber melalui sistem pengeluaran secara berintergrasi berteraskan padi</li>
-				<li class="list-group-item border-success mb-3">Mengintergrasi aktiviti hiliran, aktiviti nilai ditambah dan aktiviti huluan</li>
 			</ul>
 			
 			
